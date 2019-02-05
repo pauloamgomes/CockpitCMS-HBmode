@@ -1,0 +1,17 @@
+name: HBMode
+description: Hybrid Mode Addon
+version: 0.1
+install:
+  collections:
+    - name: basic_page
+      source: install/collections/basic_page.collection.php
+      data: install/collections/basic_page.json
+    - name: blog_post
+      source: install/collections/blog_post.collection.php
+      data: install/collections/blog_post.json
+    - name: main_menu
+      source: install/collections/main_menu.collection.php
+      data: install/collections/main_menu.json
+  customStorage:
+    - source: install/themes/hbmode
+      target: themes/hbmode

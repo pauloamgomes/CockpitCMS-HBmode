@@ -1,0 +1,17 @@
+{% extends 'main.html.twig' %}
+
+{% block entry %}
+<div id="entry-{{ entry._id }}" class="entry basic-page">
+
+  <div class="page-header">
+    <h1>{{ entry.title }}</h1>
+  </div>
+
+  {% if entry.summary %}
+    <p class="lead">{{ entry.summary }}</p>
+  {% endif %}
+
+  {% include 'wysiwyg.html.twig' with { markup: entry.body } %}
+
+</div>
+{% endblock %}

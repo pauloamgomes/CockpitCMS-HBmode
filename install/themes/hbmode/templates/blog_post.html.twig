@@ -1,0 +1,21 @@
+{% extends 'main.html.twig' %}
+
+{% block entry %}
+<div id="entry-{{ entry._id }}" class="entry blog-post">
+
+  <h1>{{ entry.title }}</h1>
+
+  {% include 'tags.html.twig' with { tags: entry.tags } %}
+
+  <p>
+    <img src="{{ entry.image | image_path }}" width="100%" />
+  </p>
+
+  <blockquote class="blockquote">
+    {{ entry.excerpt | raw }}
+  </blockquote>
+
+  {% include 'wysiwyg.html.twig' with { markup: entry.content } %}
+
+</div>
+{% endblock %}

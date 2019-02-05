@@ -1,0 +1,22 @@
+{
+    "name": "pauloamgomes/srmove",
+    "type": "project",
+    "description": "Server render mode",
+    "authors": [
+        {
+            "name": "Paulo Gomes",
+            "email": "pauloamgomes@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.0",
+        "twig/extensions": "^1.5",
+        "buzzingpixel/twig-switch": "^1.0"
+    },
+    "autoload": {
+        "classmap": [
+              "src/Twig"
+        ]
+    }
+
+}

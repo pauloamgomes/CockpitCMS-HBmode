@@ -1,0 +1,11 @@
+regions:
+  header: header.html.twig
+  main: main.html.twig
+  footer: footer.html.twig
+vars:
+  copyright: © 2019 by Paulo Gomes
+  privacy: /page/privacy
+js:
+  - js/main.js
+css:
+  - css/main.css
